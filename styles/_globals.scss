@@ -1,0 +1,97 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background-image: url(/images/Asset.jpg);
+    // background-image: url(/images/Asset1.jpg);
+    background-repeat: repeat;
+    color: $black;
+    overflow-x: hidden;
+    position: relative;
+    transition: all .5s ease-out;
+}
+
+.night {
+    background-image: url(/images/Asset1.jpg);
+    background-repeat: repeat;
+    color: $white;
+    border-color: $white;
+    transition: all .5s ease-in;
+}
+
+h1 {
+    @include for-phone-only {
+        font-size: 1.6rem;
+    }
+    @include for-tablet-portrait-up {
+        font-size: 2.0rem;
+    }
+    @include for-tablet-landscape-up {
+        font-size: 2.4rem;
+    }
+    @include for-desktop-up {
+        font-size: 3.2rem;
+    }
+    @include for-big-desktop-up {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    @include for-phone-only {
+        font-size: 1rem;
+    }
+
+    @include for-tablet-portrait-up {
+        font-size: 1.2rem;
+    }
+
+    @include for-tablet-landscape-up {
+        font-size: 1.6rem;
+    }
+
+    @include for-desktop-up {
+        font-size: 2.0rem;
+    }
+
+    @include for-big-desktop-up {
+        font-size: 2.4rem;
+    }
+}
+
+h3, p, a, li {
+    @include for-phone-only {
+        font-size: 1.0rem;
+    }
+
+    @include for-tablet-portrait-up {
+        font-size: 1.2rem;
+    }
+    @include for-tablet-landscape-up {
+        font-size: 1.4rem;
+    }
+    font-weight: 300;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.page__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul, li, a, button {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-family: 'DM Serif Display', serif;
+}
