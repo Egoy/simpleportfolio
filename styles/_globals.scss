@@ -7,7 +7,7 @@
 body {
     font-size: 62.5%;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    background-image: url(/images/Asset.jpg);
+    background-image: url(../images/Asset.jpg);
     // background-image: url(/images/Asset1.jpg);
     background-repeat: repeat;
     color: $black;
@@ -17,7 +17,7 @@ body {
 }
 
 .night {
-    background-image: url(/images/Asset1.jpg);
+    background-image: url(../images/Asset1.jpg);
     background-repeat: repeat;
     color: $white;
     border-color: $white;
