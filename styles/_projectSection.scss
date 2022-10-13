@@ -1,13 +1,17 @@
+.title {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
 .project {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
     &__container {
         border: 1px solid $black;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    .title {
-        margin: 0 auto;
         max-width: 300px;
-        text-align: center;
+        margin: 0 auto;
     }
     &__image {
         // filter: grayscale(80%);
@@ -39,9 +43,10 @@
 
 @include for-desktop-up {
     .project {
+        
         &__container {
             position: relative;
-            height: 500px;
+            height: 400px;
             width: 400px;
             overflow: hidden;
             // cursor: pointer;

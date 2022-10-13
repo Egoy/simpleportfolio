@@ -558,15 +558,22 @@ ul, li, a, button {
     padding: 0 20px;
   }
 }
-.project__container {
-  border: 1px solid #3a3a3a;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.project .title {
+.title {
   margin: 0 auto;
   max-width: 300px;
   text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.project__container {
+  border: 1px solid #3a3a3a;
+  max-width: 300px;
+  margin: 0 auto;
 }
 .project__info {
   padding: 10px;
@@ -595,7 +602,7 @@ ul, li, a, button {
 @media (min-width: 1200px) {
   .project__container {
     position: relative;
-    height: 500px;
+    height: 400px;
     width: 400px;
     overflow: hidden;
   }
