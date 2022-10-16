@@ -2,6 +2,7 @@
     margin: 0 auto;
     max-width: 300px;
     text-align: center;
+    font-size: clamp(1.2rem, 5vw, 3rem);
 }
 .project {
     display: flex;
@@ -43,7 +44,9 @@
 
 @include for-desktop-up {
     .project {
-        
+        // border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding-bottom: 2rem;
         &__container {
             position: relative;
             height: 400px;
@@ -63,7 +66,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             opacity: 0;
-            // background-color: $white;
+            width: 200px;
             transition: all .5s ease;
             color: $black;
             height: 200px;
